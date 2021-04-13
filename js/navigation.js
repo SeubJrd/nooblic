@@ -52,6 +52,8 @@
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
 			button.setAttribute( 'aria-expanded', 'false' );
+			button.classList.add("fa-bars");
+			button.classList.remove("fa-times");
 		}
 	} );
 
