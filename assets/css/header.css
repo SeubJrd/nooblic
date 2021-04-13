@@ -1,0 +1,115 @@
+
+/*Styles du header php*/
+
+#masthead
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4vw;
+    position: relative;
+}
+
+#masthead .site-branding
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#masthead .site-branding img,
+#masthead .site-branding>a
+{
+    width: 28px;
+    flex-shrink: 0;
+}
+
+#masthead .site-title-desc-contain
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#masthead .site-title-desc-contain p>a
+{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 2.1875rem;
+    text-decoration: none;
+    color: #111111;
+}
+#masthead .site-title-desc-contain p
+{
+    margin: 0;
+    width: max-content;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    color: #111111;
+}
+
+/*Navigation*/
+
+#masthead #site-navigation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#masthead #site-navigation li
+{
+    margin-left: 2vw;
+}
+#masthead #site-navigation li>a
+{
+    font-family: 'Poppins',sans-serif;
+    color: #111111;
+}
+
+/*Toggle button*/
+
+#masthead #site-navigation>button.menu-toggle
+{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+#masthead #site-navigation>button.menu-toggle:focus
+{
+    outline: none;
+    color: #576190;
+}
+
+/*Responsive*/
+
+@media only screen and (min-width : 920px) {
+    #masthead #site-navigation>button.menu-toggle
+    {
+        display: none;
+    }
+
+}
+@media only screen and (max-width : 919px) {
+    #masthead #site-navigation .menu-primary-menu-container
+    {
+        background-color: #fff;
+        z-index: 2;
+        position: absolute;
+        top: 94px;
+        left: 0;
+        width: 100%;
+    }
+    #masthead #site-navigation .menu-primary-menu-container li{
+        margin-left: 0;
+    }
+    #masthead #site-navigation .menu-primary-menu-container a
+    {
+        margin: 0 1.5rem;
+        padding: 10px;
+        border-top: solid 1px #cfcfcf;
+    }
+}
