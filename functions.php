@@ -170,7 +170,7 @@ function nooblic_scripts() {
 	wp_enqueue_style( 'nooblic-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'nooblic-style', 'rtl', 'replace' );
 
-    wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+    wp_register_style( 'fontawesome', 'https:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
     wp_enqueue_style( 'fontawesome');
 
     wp_enqueue_style('header', get_bloginfo('template_directory').'/assets/CSS/header.css');
