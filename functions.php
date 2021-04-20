@@ -51,6 +51,9 @@ if ( ! function_exists( 'nooblic_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'nooblic' ),
+				'footer-1' => esc_html__( 'Footer-1', 'nooblic' ),
+				'footer-2' => esc_html__( 'Footer-2', 'nooblic' ),
+				'footer-3' => esc_html__( 'Footer-3', 'nooblic' ),
 			)
 		);
 
@@ -133,6 +136,30 @@ function nooblic_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+    register_sidebar( array(
+        'name' => esc_html__( 'footer-1', '_s' ),
+        'id' => 'foot1',
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="footer-title">',
+        'after_title' => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name' => esc_html__( 'footer-2', '_s' ),
+        'id' => 'foot2',
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="footer-title">',
+        'after_title' => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name' => esc_html__( 'footer-3', '_s' ),
+        'id' => 'foot3',
+        'before_widget' => '<div class="footer-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="footer-title">',
+        'after_title' => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'nooblic_widgets_init' );
 
@@ -147,6 +174,8 @@ function nooblic_scripts() {
     wp_enqueue_style( 'fontawesome');
 
     wp_enqueue_style('header', get_bloginfo('template_directory').'/assets/CSS/header.css');
+
+    wp_enqueue_style('footer', get_bloginfo('template_directory').'/assets/CSS/footer.css');
 
 	wp_enqueue_script( 'nooblic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

@@ -6,26 +6,42 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Nooblic
+ * @package _s
  */
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nooblic' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'nooblic' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nooblic' ), 'nooblic', '<a href="http://chatonnay.com/">Allan Pinot, Clément Villa, Pascal Chatonnay, Sébastien Jourdain</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<div><!-- #content -->
+    <footer class="piedpage">
+        <section class="contenu3">
+
+            <!-- ajout de ma nouvelle widget area -->
+            <?php if ( is_active_sidebar( 'foot1' ) ) : ?>
+                <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'foot1' ); ?>
+                </div>
+            <?php endif; ?>
+
+
+            <!-- ajout de ma nouvelle widget area -->
+            <?php if ( is_active_sidebar( 'foot2' ) ) : ?>
+                <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'foot2' ); ?>
+                </div>
+            <?php endif; ?>
+            <!-- fin nouvelle widget area -->
+
+
+            <!-- ajout de ma nouvelle widget area -->
+            <?php if ( is_active_sidebar( 'foot3' ) ) : ?>
+                <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'foot3' ); ?>
+                </div>
+            <?php endif; ?>
+            <!-- fin nouvelle widget area -->
+
+        </section>
+    </footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

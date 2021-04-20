@@ -1,0 +1,54 @@
+
+footer.piedpage
+{
+    background-color: black;
+    padding: 30px 0;
+}
+.contenu3
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contenu3 li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.contenu3 li a{
+    color: white;
+    text-decoration: none;
+}
+.contenu3 li a:hover{
+    color: #666666;
+    transition: color 0.15s;
+}
+.contenu3 ul{
+    margin: 0;
+    padding: 0;
+}
+.contenu3 .nwa-header-widget:not(:nth-of-type(1))
+{
+    max-width: 330px;
+}
+
+/*Responsive*/
+
+@media only screen and (min-width : 920px) {
+
+}
+@media only screen and (max-width : 919px) {
+    .contenu3
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 5%;
+    }
+    .contenu3 .nwa-header-widget:not(:nth-last-of-type(1))
+    {
+        margin-bottom: 50px;
+    }
+    .contenu3 .nwa-header-widget:nth-of-type(1)
+    {
+        text-align: center;
+    }
+}
