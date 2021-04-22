@@ -173,9 +173,9 @@ function nooblic_scripts() {
     wp_register_style( 'fontawesome', 'https:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
     wp_enqueue_style( 'fontawesome');
 
-    wp_enqueue_style('header', get_bloginfo('template_directory').'/assets/CSS/header.css');
+    wp_enqueue_style('header', get_bloginfo('template_directory').'/assets/css/header.css');
 
-    wp_enqueue_style('footer', get_bloginfo('template_directory').'/assets/CSS/footer.css');
+    wp_enqueue_style('footer', get_bloginfo('template_directory').'/assets/css/footer.css');
 
 	wp_enqueue_script( 'nooblic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
