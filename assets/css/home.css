@@ -1,0 +1,23 @@
+
+/*Styles de la page d'accueil*/
+
+.n-button
+{
+    display: block;
+    padding: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 7rem;
+    text-align: center;
+}
+.n-fill-primary
+{
+    color: white;
+    background-color: #7d539b;
+}
+.n-outline-primary
+{
+    color: #111111;
+    background-color: transparent;
+    border: #7d539b 1px solid;
+}

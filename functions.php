@@ -7,6 +7,13 @@
  * @package Nooblic
  */
 
+///////////////////////////////////////////////////////////Variables globales////////////////////////////////////////////////////////
+
+global $headerHeight;
+$headerHeight = "70px";
+
+///////////////////////////////////////////////////////////////Fonctions///////////////////////////////////////////////////////////
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -177,7 +184,14 @@ function nooblic_scripts() {
 
     wp_enqueue_style('footer', get_bloginfo('template_directory').'/assets/css/footer.css');
 
+    wp_enqueue_style('home', get_bloginfo('template_directory').'/assets/css/home.css');
+
 	wp_enqueue_script( 'nooblic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'article-carousel', get_template_directory_uri() . '/js/articles-carousel.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'crayon', get_template_directory_uri() . '/js/crayon.js', array(), _S_VERSION, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
