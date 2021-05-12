@@ -1,16 +1,57 @@
+
 @media only screen and (min-width : 920px) {
-  
+
+  /*soulignement des titres*/
+
+  :root {
+    --underline-intrinsic-width: 8;
+    --underline-width: 12;
+    --underline-color: #FDCA40;
+    --underline-cap-width: 0px;
+    --underline-offset-y: -10px;
+    --underline-padding-x: 0.12em;
+  }
+
+  .entry-title {
+    display: inline;
+    --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
+    padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
+    box-decoration-break: clone;
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(180deg, var(--underline-color), var(--underline-color)),
+      var(--cap-image-left),
+      var(--cap-image-right);
+    background-position-x:
+      calc(var(--underline-cap-width) * var(--underline-width-scale)),
+      0,
+      100%;
+    background-position-y: calc(100% - var(--underline-offset-y) * -1);
+    background-size:
+      calc(100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)) calc(var(--underline-width) * 1px),
+      auto calc(var(--underline-width) * 1px),
+      auto calc(var(--underline-width) * 1px);
+    --underline-width: 20;
+    --underline-offset-y: -10px;
+    --cap-image-left: url(https://files-6lc03kjqt.now.sh/left-2.svg);
+    --cap-image-right: url(https://files-e7gkh52mq.now.sh/right-2.svg);
+  }
+
+  /*fin du soulignement des titres*/
+
 .entry-title{
   font-size: 5vw;
   color: black;
-  width: 70%;
-  margin-left: 10vw;
-  margin-bottom: 2vh;
   line-height: 1.25;
 }
 
-.entry-meta{
+.entry-header{
   margin-left: 10vw;
+  margin-right: 15vw;
+}
+
+.entry-meta{
+  margin-top: 2vh;
   font-weight: bold;
 }
 
@@ -35,11 +76,9 @@
   font-size: 2vw;
   color: black;
   margin-bottom: 5vh;
-  margin-bottom: 5vh;
 }
 
 .entry-content p{
-  margin-bottom: 5vh;
   margin-bottom: 5vh;
 }
 
@@ -58,7 +97,99 @@
 
 @media only screen and (max-width : 919px) {
 
+  /*soulignement des titres*/
 
+  :root {
+    --underline-intrinsic-width: 8;
+    --underline-width: 12;
+    --underline-color: #FDCA40;
+    --underline-cap-width: 0px;
+    --underline-offset-y: -10px;
+    --underline-padding-x: 0.12em;
+  }
+
+  .entry-title {
+    display: inline;
+    --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
+    padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
+    box-decoration-break: clone;
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(180deg, var(--underline-color), var(--underline-color)),
+      var(--cap-image-left),
+      var(--cap-image-right);
+    background-position-x:
+      calc(var(--underline-cap-width) * var(--underline-width-scale)),
+      0,
+      100%;
+    background-position-y: calc(100% - var(--underline-offset-y) * -1);
+    background-size:
+      calc(100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)) calc(var(--underline-width) * 1px),
+      auto calc(var(--underline-width) * 1px),
+      auto calc(var(--underline-width) * 1px);
+    --underline-width: 20;
+    --underline-offset-y: 8px;
+    --cap-image-left: url(https://files-6lc03kjqt.now.sh/left-2.svg);
+    --cap-image-right: url(https://files-e7gkh52mq.now.sh/right-2.svg);
+  }
+
+  /*fin du soulignement des titres*/
+
+  .entry-title{
+    font-size: 9vw;
+    color: black;
+    line-height: 1.25;
+  }
+
+  .entry-header{
+    margin-left: 2vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+  }
+
+  .entry-meta{
+    margin-top: 2vh;
+    font-weight: bold;
+  }
+
+  .entry-meta a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .post-thumbnail{
+    width: 90%;
+    margin-left: 4vw;
+    margin-top: 5vh;
+  }
+
+  .entry-content{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 5vh;
+  }
+
+  .entry-content h2{
+    font-size: 6vw;
+    color: black;
+    margin-bottom: 5vh;
+  }
+
+  .entry-content p{
+    margin-bottom: 5vh;
+  }
+
+  .entry-content blockquote{
+    font-size: 4vw;
+    color: black;
+    font-style: italic;
+  }
+
+  .entry-content a{
+    text-decoration: none;
+    color: #FDCA40;
+    font-weight: bold;
+  }
 
 
 
