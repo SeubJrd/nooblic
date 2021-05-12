@@ -1,3 +1,71 @@
+@media only screen and (min-width : 920px) {
+  
 .entry-title{
   font-size: 5vw;
+  color: black;
+  width: 70%;
+  margin-left: 10vw;
+  margin-bottom: 2vh;
+  line-height: 1.25;
+}
+
+.entry-meta{
+  margin-left: 10vw;
+  font-weight: bold;
+}
+
+.entry-meta a{
+  color: black;
+  text-decoration: none;
+}
+
+.post-thumbnail{
+  width: 50%;
+  margin-left: 20vw;
+  margin-top: 5vh;
+}
+
+.entry-content{
+  margin-left: 15vw;
+  width: 65%;
+  margin-top: 10vh;
+}
+
+.entry-content h2{
+  font-size: 2vw;
+  color: black;
+  margin-bottom: 5vh;
+  margin-bottom: 5vh;
+}
+
+.entry-content p{
+  margin-bottom: 5vh;
+  margin-bottom: 5vh;
+}
+
+.entry-content blockquote{
+  font-size: 1.5vw;
+  color: black;
+  font-style: italic;
+}
+
+.entry-content a{
+  text-decoration: none;
+  color: #FDCA40;
+  font-weight: bold;
+}
+}
+
+@media only screen and (max-width : 919px) {
+
+
+
+
+
+
+
+
+
+
+
 }
