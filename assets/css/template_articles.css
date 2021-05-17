@@ -145,6 +145,19 @@
   font-style: italic;
 }
 
+/*styles pour la FAQ*/
+.faq-titre{
+	margin-left: 15vw;
+  	width: 65%;
+  	margin-top: 5vh;
+	}
+
+.faq-p{
+	margin-left: 15vw;
+  	width: 65%;
+  	margin-top: 3vh;
+	}
+
 }
 
 @media only screen and (max-width : 919px) {
@@ -289,6 +302,18 @@
   .comment-list{
     margin: 0;
   }
+
+  /*styles pour la FAQ*/
+
+  .faq-p{
+  	margin-left: 4vw;
+      width: 90%;
+  	}
+
+  	.faq-titre{
+  	margin-left: 4vw;
+      width: 90%;
+  	}
 
 
 
