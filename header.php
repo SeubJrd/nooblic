@@ -41,12 +41,7 @@
 				?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
-			endif;
-			$nooblic_description = get_bloginfo( 'description', 'display' );
-			if ( $nooblic_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $nooblic_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			endif ?>
             </div>
 		</div><!-- .site-branding -->
 
