@@ -158,6 +158,15 @@
   	margin-top: 3vh;
 	}
 
+  .faq-lien{
+	margin-left: 15vw;
+    width: 65%;
+		text-decoration: none;
+		color: #B84D97;
+		margin-bottom: 10vh;
+		font-weight: bold;
+	}
+
 }
 
 @media only screen and (max-width : 919px) {
@@ -314,6 +323,15 @@
   	margin-left: 4vw;
       width: 90%;
   	}
+
+    .faq-lien{
+	margin-left: 4vw;
+    width: 90%;
+		text-decoration: none;
+		color: #B84D97;
+		margin-bottom: 5vh;
+		font-weight: bold;
+	}
 
 
 
