@@ -186,8 +186,7 @@ function nooblic_scripts() {
 
     wp_enqueue_style('home', get_bloginfo('template_directory').'/assets/css/home.css');
 
-
-    //scripts
+		wp_enqueue_style('template_articles', get_bloginfo('template_directory').'/assets/css/template_articles.css');
 
 	wp_enqueue_script( 'nooblic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
@@ -228,4 +227,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
