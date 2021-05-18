@@ -1,0 +1,95 @@
+html{
+  margin: 0;
+}
+
+@media only screen and (min-width : 920px) {
+
+.logo-propos{
+  width: 30%;
+  margin-left: 15vw;
+}
+
+.propos-h1{
+  margin-left: -11vw;
+}
+
+.propos-p{
+  margin-left: 15vw;
+  width: 65%;
+}
+
+.propos-h2{
+  margin-left: 15vw;
+  width: 65%;
+}
+
+#propos-crédits{
+  width: 65vw;
+  margin-left: 15vw;
+}
+
+.crédits-lien{
+  text-decoration: none;
+  color: #B84D97;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  display: block;
+}
+
+}
+
+
+@media only screen and (max-width : 919px) {
+
+  .logo-propos{
+    width: 30%;
+    position: absolute;
+    margin-left: 4vw;
+  }
+
+  #mobile-titre-propos{
+    margin-left: 30vw;
+    margin-top: 15vw;
+  }
+
+  .propos-p{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 2vh;
+  }
+
+  .propos-h2{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 2vh;
+  }
+
+  .propos-h3{
+    text-align: left;
+    margin-left: 4vw;
+    width: 90%;
+  }
+
+  .crédits-lien{
+    text-decoration: none;
+    color: #B84D97;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    display: block;
+    margin-left: 4vw;
+    width: 90%;
+  }
+
+  .mobiles{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+
+
+
+}
