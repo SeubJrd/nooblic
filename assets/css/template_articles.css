@@ -1,4 +1,12 @@
 
+.entry-footer{
+  visibility: hidden;
+}
+
+.akismet_comment_form_privacy_notice{
+  visibility: hidden;
+}
+
 @media only screen and (min-width : 920px) {
 
   /*soulignement des titres*/
@@ -90,9 +98,75 @@
 
 .entry-content a{
   text-decoration: none;
-  color: #FDCA40;
+  color: #B84D97;
   font-weight: bold;
 }
+
+#comments{
+  margin-left: 15vw;
+  width: 65%;
+  margin-top: 10vh;
+  padding-top: 5vh;
+  border-top: 0.2vw solid black;
+}
+
+.comments-title{
+  text-align: center;
+}
+
+.logged-in-as a{
+  color: black;
+}
+
+.logged-in-as a:first-of-type{
+  text-decoration: none;
+}
+
+.submit{
+  cursor: pointer;
+}
+
+.comment-body{
+  margin-bottom: 5vh;
+}
+
+.reply a{
+  color: black;
+}
+
+.fn a{
+  text-decoration: none;
+  color: #B84D97;
+}
+
+.comment-metadata a{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+/*styles pour la FAQ*/
+.faq-titre{
+	margin-left: 15vw;
+  	width: 65%;
+  	margin-top: 5vh;
+	}
+
+.faq-p{
+	margin-left: 15vw;
+  	width: 65%;
+  	margin-top: 3vh;
+	}
+
+  .faq-lien{
+	margin-left: 15vw;
+    width: 65%;
+		text-decoration: none;
+		color: #B84D97;
+		margin-bottom: 10vh;
+		font-weight: bold;
+	}
+
 }
 
 @media only screen and (max-width : 919px) {
@@ -187,12 +261,77 @@
 
   .entry-content a{
     text-decoration: none;
-    color: #FDCA40;
+    color: #B84D97;
     font-weight: bold;
   }
 
+  #comments{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    border-top: 0.2vw solid black;
+  }
 
+  .comments-title{
+    text-align: center;
+  }
 
+  .logged-in-as a{
+    color: black;
+  }
+
+  .logged-in-as a:first-of-type{
+    text-decoration: none;
+  }
+
+  .submit{
+    cursor: pointer;
+  }
+
+  .comment-body{
+    margin-bottom: 5vh;
+  }
+
+  .reply a{
+    color: black;
+  }
+
+  .fn a{
+    text-decoration: none;
+    color: #B84D97;
+  }
+
+  .comment-metadata a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+  }
+
+  .comment-list{
+    margin: 0;
+  }
+
+  /*styles pour la FAQ*/
+
+  .faq-p{
+  	margin-left: 4vw;
+      width: 90%;
+  	}
+
+  	.faq-titre{
+  	margin-left: 4vw;
+      width: 90%;
+  	}
+
+    .faq-lien{
+	margin-left: 4vw;
+    width: 90%;
+		text-decoration: none;
+		color: #B84D97;
+		margin-bottom: 5vh;
+		font-weight: bold;
+	}
 
 
 
