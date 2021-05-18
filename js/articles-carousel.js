@@ -11,8 +11,8 @@
 	let carouselArticles2 = null;
 	let circleCenter = null;
 	const angle = 45; //rad
-	const rayon = 259; //px
-	const rayon2 =289*0.479; //px
+	const rayon = 288; //px
+	const rayon2 = 155; //px
 	let itemArray = [];
 	let itemBoundingBox = [];
 

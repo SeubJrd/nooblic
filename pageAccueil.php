@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Carousel Articles
+* Template Name: Page d'accueil
 * Description: Page de test
 */
 
@@ -68,7 +68,7 @@ get_header();
                      style="background-color: #319b33; width: 20px; height: 130vh; position: absolute;"></div>
             </div>
 
-            <div style="margin-left: 60vw; width: 25vw; margin-top: 100px;">
+            <div style="margin-left: 60vw; width: 25vw; margin-top: 20vh;">
                 <div>
                     <h1>Explorons le<br>WEB Ensemble.</h1>
                     <p>Des recherches pédagogiques et avis personnels,<br>par des étudiants passionnés.</p>
@@ -81,34 +81,69 @@ get_header();
 
         </div>
 
-        <div id="nyanCat" style="position: relative; margin-top: -40vh;">
-            <div style="position: absolute; top: 20px; right: 0; z-index: -1">
-                <div style="background-color: red; height: <?php echo cos(-2 * M_PI / 6) * 100 ?>px; width: 500px);"></div>
-                <div style="background-color: blue; height: <?php echo cos(-M_PI / 6) * 100 ?>px; width: 500px;"></div>
-                <div style="background-color: green; height: <?php echo cos(0) * 100 ?>px; width: 500px;"></div>
-                <div style="background-color: yellow; height: <?php echo cos(M_PI / 6) * 100 ?>px; width: 500px;"></div>
-                <div style="background-color: orange; height: <?php echo cos(2 * M_PI / 6) * 100 ?>px; width: 500px;"></div>
-                <div style="background-color: purple; height: <?php echo cos(3 * M_PI / 6) * 100 ?>px; width: 500px;"></div>
-            </div>
-            <div style="box-shadow: 0px 0px 30px rgba(0,0,0,0.27); min-height: 60vh; width: 70%; margin: auto; border-radius: 40px; background-color: white">
-                <div style="width: 100%; padding: 30px;">
-                    <ul class="Ngrid" style="padding: 0; margin: 0;">
-                        <?php $popular = new WP_Query('orderby=comment_count&posts_per_page=6'); ?> <?php while ($popular->have_posts()) : $popular->the_post(); ?>
-                        <li>
-                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
-                                <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
-                                    <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
-                                    <span style="justify-self: flex-end ;align-self: flex-end; color: white"><?php comments_number('0', '1', '%'); ?> <i class="fas fa-comments"></i></span>
-                                </div>
-                            </a>
-                        </li>
-                        <?php endwhile; ?>
-                    </ul>
+        <div id="nyanCat" style="margin-top: -40vh; display: flex; flex-direction: row; align-items: center; justify-content: flex-end">
+            <div style="z-index: 1; box-shadow: 0px 0px 30px rgba(0,0,0,0.27); min-height: 60vh; max-width: 864px; width: 70%; border-radius: 40px; background-color: white; overflow: hidden">
+                <div id="NCslider" class="NParentGrid" style="width: 300%; padding: 30px 20px 30px 20px; margin-left: -0%;">
+                    <div>
+                        <h2>Nos articles les plus commentés</h2>
+                        <ul class="Ngrid" style="padding: 0; margin: 0;">
+                            <?php $popular = new WP_Query('orderby=comment_count&posts_per_page=6'); ?> <?php while ($popular->have_posts()) : $popular->the_post(); ?>
+                            <li>
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
+                                    <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
+                                        <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
+                                        <span style="justify-self: flex-end ;align-self: flex-end; color: white"><?php comments_number('0', '1', '%'); ?> <i class="fas fa-comments"></i></span>
+                                      </div>
+                                </a>
+                            </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Nos articles les plus lus</h2>
+                        <ul class="Ngrid" style="padding: 0; margin: 0;">
+                            <?php $popular = new WP_Query('orderby=comment_count&posts_per_page=6'); ?> <?php while ($popular->have_posts()) : $popular->the_post(); ?>
+                            <li>
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
+                                    <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
+                                        <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
+                                        <span style="justify-self: flex-end ;align-self: flex-end; color: white"><?php comments_number('0', '1', '%'); ?> <i class="fas fa-comments"></i></span>
+                                      </div>
+                                </a>
+                            </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Nos articles les plus récents</h2>
+                        <ul class="Ngrid" style="padding: 0; margin: 0;">
+                            <?php $popular = new WP_Query('posts_per_page=6'); ?> <?php while ($popular->have_posts()) : $popular->the_post(); ?>
+                            <li>
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
+                                    <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
+                                        <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
+                                        <span style="justify-self: flex-end ;align-self: flex-end; color: white"><?php comments_number('0', '1', '%'); ?> <i class="fas fa-comments"></i></span>
+                                      </div>
+                                </a>
+                            </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <div style="z-index: 2">
+                <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: red; height: <?php echo cos(-2 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
+                <div id="NC_Trig1" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: blue; height: <?php echo cos(-M_PI / 6) * 100 ?>px; width: 40vw; cursor: pointer;" >Articles les plus commentés</div>
+                <div id="NC_Trig2" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: green; height: <?php echo cos(0) * 100 ?>px; width: 40vw; cursor: pointer;">Articles les plus lus</div>
+                <div id="NC_Trig3" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: yellow; height: <?php echo cos(M_PI / 6) * 100 ?>px; width: 40vw; cursor: pointer;">Articles les plus récents</div>
+                <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: orange; height: <?php echo cos(2 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
+                <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: purple; height: <?php echo cos(3 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
             </div>
         </div>
 
-        <div style="height: 500px">
+
+
+        <div style="height: 100px">
 
         </div>
 
@@ -118,10 +153,10 @@ get_header();
 
         //Parms
         global $sizeCarousel1;
-        $sizeCarousel1 = 0.45;
+        $sizeCarousel1 = 0.5;
 
         global $sizeCarousel2;
-        $sizeCarousel2 = 0.45;
+        $sizeCarousel2 = 0.5;
 
         global $coloredMaskOpacity;
         $coloredMaskOpacity = 0.6;
@@ -174,8 +209,8 @@ get_header();
         ?>
 
 
-        <div style="width: 100%; height: 50vh; display: flex; justify-content: center; justify-items: center; overflow: hidden; position: relative">
-            <div id="carouselArticles" style="height: 100vh; position: absolute; top : 40px;">
+        <div style="width: 100%; height: 60vh; display: flex; justify-content: center; justify-items: center; overflow: hidden; position: relative">
+            <div id="carouselArticles" style="height: 110vh; position: absolute; top : 40px; left: 25vw;">
                 <?php
                 $the_query = new WP_Query('posts_per_page=16');
                 while ($the_query->have_posts()) :
@@ -281,7 +316,7 @@ get_header();
                     </a>
                 <?php endif ?>
             </div>
-            <div id="carouselArticles2" style="height: 100vh; position: absolute; top: 40px;">
+            <div id="carouselArticles2" style="height: 110vh; position: absolute; top: 40px; left: 25vw;">
 
                 <?php else: ?>
                     <?php if (get_the_post_thumbnail_url(get_the_ID(), 'full') != null): ?>

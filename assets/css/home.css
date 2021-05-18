@@ -10,12 +10,14 @@
     width: 7rem;
     text-align: center;
 }
-.n-fill-primary
+.n-fill-primary,
+.n-fill-primary:visited
 {
     color: white;
     background-color: #7d539b;
 }
-.n-outline-primary
+.n-outline-primary,
+.n-outline-primary:visited
 {
     color: #111111;
     background-color: transparent;
@@ -29,6 +31,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+}
+#nyanCat .NParentGrid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
 }
 #nyanCat .Ngrid li
 {
@@ -54,4 +62,26 @@
 }
 i {   font-family: 'FontAwesome';
 
+}
+
+#NC_Trig1:hover,
+#NC_Trig2:hover,
+#NC_Trig3:hover
+{
+    filter: saturate(80%);
+}
+.ncTranslate-0
+{
+    transition: all 500ms;
+    transform: translateX(0);
+}
+.ncTranslate-1
+{
+    transition: all 500ms;
+    transform: translateX(-33.333%);
+}
+.ncTranslate-2
+{
+    transition: all 500ms;
+    transform: translateX(-66.66666%);
 }
