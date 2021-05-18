@@ -1,0 +1,99 @@
+@media only screen and (min-width : 920px) {
+
+.redac-titre{
+  font-size: 5vw;
+  color: black;
+  line-height: 1.25;
+  margin-left: 10vw;
+  margin-right: 15vw;
+}
+
+.redac-p{
+  margin-left: 15vw;
+  width: 65%;
+  margin-top: 2vh;
+}
+
+.redac-h2{
+  margin-left: 15vw;
+  width: 65%;
+  margin-top: 3vh;
+}
+
+.redac-h3{
+  margin-left: 15vw;
+  width: 65%;
+  margin-top: 3vh;
+}
+
+.redac-h4{
+  margin-left: 15vw;
+  width: 65%;
+  margin-top: 3vh;
+}
+
+.redac-img{
+  margin-left: -40vw;
+}
+
+.redac-liste{
+  margin-left: 15vw;
+  width: 65%;
+}
+
+.redac-citation{
+  font-style: italic;
+  font-size: 2vw;
+}
+
+}
+@media only screen and (max-width : 919px) {
+
+  .redac-titre{
+    margin-left: 4vw;
+    width: 90%;
+  }
+
+  .redac-p{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 2vh;
+  }
+
+  .redac-h2{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 3vh;
+  }
+
+  .redac-h3{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 3vh;
+  }
+
+  .redac-h4{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 3vh;
+  }
+
+  .redac-img{
+    width: 90%;
+    margin-left: 4vw;
+  }
+
+  .redac-liste{
+    margin-left: 4vw;
+    width: 90%;
+  }
+
+  .redac-citation{
+    font-style: italic;
+    font-size: 5vw;
+  }
+
+
+
+
+}
