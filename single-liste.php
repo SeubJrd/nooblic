@@ -22,29 +22,42 @@ if (have_posts()) :
                      style="background-image: url(<?php echo $image; ?>);">
                     <div class="articles">
                         <div id="fond-texte">
-                            <h2><?php the_title(); ?></h2>
-                            <p><?php $chaine = substr(get_the_excerpt(), 0, 150);
+
+                            <!--Titre et résumé de l'article-->
+
+                            <h2 class="soulignement"><?php the_title(); ?></h2>
+                            <p class="resume"><?php $chaine = substr(get_the_excerpt(), 0, 120);
                                 // on regarde ou se trouve le dernier espace dans la chaine
                                 $espace = strrpos($chaine, " ");
                                 // on prend la chaine de 0 au dernier espace et on ajoute ...
                                 $chaine = substr($chaine, 0, $espace) . " [...]";
                                 echo $chaine; ?>
                             </p>
-                            <div class="donnees-articles">
-                                <div class="nb_qqch">
-                                    <img alt="logo oeil" src="<?php echo get_bloginfo('template_directory')?>/image/oeil.svg">
-                                    <p class="interactions">icone commentaire</p>
-                                    <p class="interactions">Nb de commentaires</p>
-                                    <p class="interactions">icone tendance</p>
-                                    <p class="interactions">Lire la suite</p>
+
+                            <!--Barre en bas du résumé de l'article-->
+
+                            <div class="en-bas">
+                                <div class="donnees-articles">
+                                    <?php pvc_post_views(get_the_ID(), true); ?> <!--nombre de vues-->
+                                    <img class="interaction" alt="logo commentaire"
+                                         src="<?php echo get_bloginfo('template_directory') ?>/image/commentaire.svg">
+                                    <p class="interactions">
+                                        <?php $num_comments = get_comments_number();
+                                        echo "<strong>" . $num_comments . "</strong>"; ?> <!--nombre de commentaires-->
+                                    </p>
+
+                                    <img class="interaction" alt="logo tendance"
+                                         src="<?php echo get_bloginfo('template_directory') ?>/image/flamme.svg">
+                                    <div class="lire_la_suite">
+                                        <p class="interactions">Lire la suite</p>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-
             </a>
-
         </li>
 
 

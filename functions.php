@@ -199,6 +199,7 @@ function nooblic_scripts() {
 	wp_enqueue_script( 'crayon', get_template_directory_uri() . '/js/crayon.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script( 'nyan-cat', get_template_directory_uri() . '/js/nyan-cat.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'police', get_template_directory_uri() . '/js/police.js', array(), _S_VERSION, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
