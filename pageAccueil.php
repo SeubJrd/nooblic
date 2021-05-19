@@ -11,9 +11,9 @@ get_header();
     <main id="primary" class="site-main">
 
         <div id="top-head" style="height: calc( 140vh - <?php echo $headerHeight ?> ); overflow: hidden; position: relative">
-            <div style="transform-origin: top right; transform: rotate(22.5deg); box-shadow: 0px 0px 30px rgba(0,0,0,0.27); position: absolute; width: 25vw; height: 160vh"></div>
-            <div style="transform-origin: top right; transform: rotate(45deg); box-shadow: 0px 0px 30px rgba(0,0,0,0.27); position: absolute; width: 20vw; height: 100vh"></div>
-            <div style="transform-origin: top right; position: absolute; width: 5vw; height: 15vw; left: 4vw; top: 2vw">
+            <div style="transform-origin: top right; transform: rotate(22.5deg); box-shadow: 0px 0px 30px rgba(0,0,0,0.27); position: absolute; width: 25vw; height: 160vh; min-width: 222px"></div>
+            <div style="transform-origin: top right; transform: rotate(45deg); box-shadow: 0px 0px 30px rgba(0,0,0,0.27); position: absolute; width: 20vw; height: 100vh; min-width: 219px"></div>
+            <div id="th-logo" style="transform-origin: top right; position: absolute; width: 5vw; height: 15vw; left: 4vw; top: 2vw; min-width: 52px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209.38 271.11">
                     <g id="Calque_2" data-name="Calque 2">
                         <g id="Calque_2-2" data-name="Calque 2">
@@ -35,10 +35,9 @@ get_header();
                     </g>
                 </svg>
             </div>
-            <div style="box-shadow: 0px 0px 30px rgba(0,0,0,0.27); z-index: -1; position: absolute; width: 70vw; height: 70vw; top: calc( ( 100vh - <?php echo $headerHeight ?> ) / 2 - 70vw / 2 ); right: calc(-70vw / 2); border-radius: 100000px; background-color: white"></div>
-            <div style="box-shadow: 0px 0px 30px rgba(0,0,0,0.27); z-index: -1; position: absolute; width: 45vw; height: 45vw; top: calc( ( 100vh - <?php echo $headerHeight ?> ) / 2 - 45vw / 2 ); right: calc(-45vw / 2); border-radius: 100000px; background-color: white"></div>
-            <div id="trigger"
-                 style="box-shadow: 0px 0px 30px rgba(0,0,0,0.27); position: absolute; width: 20vw; height: 20vw; top: calc( ( 100vh - <?php echo $headerHeight ?> ) / 2 - 20vw / 2 ); right: calc(-20vw / 2); border-radius: 100000px"></div>
+            <div class="circle1" style="box-shadow: 0px 0px 30px rgba(0,0,0,0.27); z-index: -1; position: absolute; width: 70vw; height: 70vw; top: calc( ( 100vh - <?php echo $headerHeight ?> ) / 2 - 70vw / 2 ); right: calc(-70vw / 2); border-radius: 100000px; background-color: white"></div>
+            <div class="circle2" style="box-shadow: 0px 0px 30px rgba(0,0,0,0.27); z-index: -1; position: absolute; width: 45vw; height: 45vw; top: calc( ( 100vh - <?php echo $headerHeight ?> ) / 2 - 45vw / 2 ); right: calc(-45vw / 2); border-radius: 100000px; background-color: white"></div>
+            <div class="circle3" id="trigger" style="box-shadow: 0px 0px 30px rgba(0,0,0,0.27); position: absolute; width: 20vw; height: 20vw; top: calc( ( 100vh - <?php echo $headerHeight ?> ) / 2 - 20vw / 2 ); right: calc(-20vw / 2); border-radius: 100000px; background-color: white"></div>
 
             <div id="crayon"
                  style="position: absolute; left: 40vw; top: -10vw; transform-origin: top center; transform: rotate(11.25deg); display: flex; flex-direction: row">
@@ -78,6 +77,8 @@ get_header();
                     <a href="#" class="n-button n-outline-primary" style="margin-left: 20px;">À propos</a>
                 </div>
             </div>
+
+            <a id="scollInvite" href="#nyanCat"><span></span></a>
 
         </div>
 
@@ -132,21 +133,14 @@ get_header();
                 </div>
             </div>
             <div style="z-index: 2">
-                <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: red; height: <?php echo cos(-2 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
-                <div id="NC_Trig1" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: blue; height: <?php echo cos(-M_PI / 6) * 100 ?>px; width: 40vw; cursor: pointer;" >Articles les plus commentés</div>
-                <div id="NC_Trig2" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: green; height: <?php echo cos(0) * 100 ?>px; width: 40vw; cursor: pointer;">Articles les plus lus</div>
-                <div id="NC_Trig3" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: yellow; height: <?php echo cos(M_PI / 6) * 100 ?>px; width: 40vw; cursor: pointer;">Articles les plus récents</div>
-                <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: orange; height: <?php echo cos(2 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
+                <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(233, 72, 63); height: <?php echo cos(-2 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
+                <div id="NC_Trig1" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(27, 60, 136); height: <?php echo cos(-M_PI / 6) * 100 ?>px; width: 40vw; cursor: pointer;" >Articles les plus commentés</div>
+                <div id="NC_Trig2" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(237, 107, 29); height: <?php echo cos(0) * 100 ?>px; width: 40vw; cursor: pointer;">Articles les plus lus</div>
+                <div id="NC_Trig3" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(74, 178, 119); height: <?php echo cos(M_PI / 6) * 100 ?>px; width: 40vw; cursor: pointer;">Articles les plus récents</div>
+                <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(184, 77, 151); height: <?php echo cos(2 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
                 <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: purple; height: <?php echo cos(3 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
             </div>
         </div>
-
-
-
-        <div style="height: 100px">
-
-        </div>
-
 
 
         <?php
@@ -159,13 +153,19 @@ get_header();
         $sizeCarousel2 = 0.5;
 
         global $coloredMaskOpacity;
-        $coloredMaskOpacity = 0.6;
+        $coloredMaskOpacity = 0.80;
 
         global $imageOpacity;
-        $imageOpacity = 0.6;
+        $imageOpacity = 0.2; //max 0
+
+        global $NoImageOpacity;
+        $NoImageOpacity = 0.2; //max 0
 
         global $textColor;
         $textColor = "white";
+
+        global $colors;
+        $colors = ["#1B3C88", '#B84D97', '#12B4E1', '#E9483F', '#4AB277', '#ED6B1D'];
 
         //fonctionnement
         global $loopIndex;
@@ -193,9 +193,8 @@ get_header();
             return $size;
         }
 
-        function getRndColor(&$indexLastColor)
+        function getRndColor(&$indexLastColor, $colors)
         {
-            $colors = ["#1B3C88", '#B84D97', '#12B4E1', '#E9483F', '#4AB277', '#ED6B1D'];
 
             do {
                 $i = random_int(0, sizeof($colors) - 1);
@@ -209,7 +208,7 @@ get_header();
         ?>
 
 
-        <div style="width: 100%; height: 60vh; display: flex; justify-content: center; justify-items: center; overflow: hidden; position: relative">
+        <div id="carouselContainer" style="width: 100%; height: 60vh; display: flex; justify-content: center; justify-items: center; overflow: hidden; position: relative">
             <div id="carouselArticles" style="height: 110vh; position: absolute; top : 40px; left: 25vw;">
                 <?php
                 $the_query = new WP_Query('posts_per_page=16');
@@ -255,9 +254,9 @@ get_header();
                                      style='width: calc( 711px * <?php echo $sizeCarousel1 ?> ); height: calc( 339px * <?php echo $sizeCarousel1 ?> );'>
                                     <title>Fp1</title>
                                     <path d="M111.3,338.37c163.07-67.54,338.05-62.69,489.24-.25L710.75,72.05C491.47-18.6,237.63-25.69,1.09,72.29l-.42.18L110.89,338.54Z"
-                                          style="fill: <?php echo getRndColor($indexLastColor) ?>"/>
+                                          style="fill: <?php echo getRndColor($indexLastColor, $colors) ?>"/>
                                     <path d="M111.3,338.37c163.07-67.54,338.05-62.69,489.24-.25L710.75,72.05C491.47-18.6,237.63-25.69,1.09,72.29l-.42.18L110.89,338.54Z"
-                                          style="fill: #fff;fill-opacity: <?php echo $coloredMaskOpacity ?>"/>
+                                          style="fill: #fff;fill-opacity: <?php echo $NoImageOpacity ?>"/>
                                 </svg>
                                 <div style="position: absolute; top:0; height: calc( 339px * <?php echo $sizeCarousel1 ?> ); display: flex; justify-content: center; align-items: center">
                                     <p style="padding: 0 30px; color: <?php echo $textColor ?>; text-align: center; margin: auto 0"><?php echo the_title(); ?></p>
@@ -305,9 +304,9 @@ get_header();
                                  style='width: calc( 711px * <?php echo $sizeCarousel1 ?> ); height: calc( 339px * <?php echo $sizeCarousel1 ?> );'>
                                 <title>Fp1</title>
                                 <path d="M111.3,338.37c163.07-67.54,338.05-62.69,489.24-.25L710.75,72.05C491.47-18.6,237.63-25.69,1.09,72.29l-.42.18L110.89,338.54Z"
-                                      style="fill: <?php echo getRndColor($indexLastColor) ?>"/>
+                                      style="fill: <?php echo getRndColor($indexLastColor, $colors) ?>"/>
                                 <path d="M111.3,338.37c163.07-67.54,338.05-62.69,489.24-.25L710.75,72.05C491.47-18.6,237.63-25.69,1.09,72.29l-.42.18L110.89,338.54Z"
-                                      style="fill: #fff;fill-opacity: <?php echo $coloredMaskOpacity ?>"/>
+                                      style="fill: #fff;fill-opacity: <?php echo $NoImageOpacity ?>"/>
                             </svg>
                             <div style="position: absolute; top:0; height: calc( 339px * <?php echo $sizeCarousel1 ?> ); display: flex; justify-content: center; align-items: center">
                                 <p style="padding: 0 30px; color: <?php echo $textColor ?>; text-align: center; margin: auto 0"><?php echo the_title(); ?></p>
@@ -357,9 +356,9 @@ get_header();
                                      style='width: calc( 490px * <?php echo $sizeCarousel2 ?> ); height: calc( 317px * <?php echo $sizeCarousel2 ?> );'>
                                     <title>Fp2</title>
                                     <path d="M111.36,316.57a349.43,349.43,0,0,1,267.69-.25L489.83,48.9C338.64-13.55,163.65-18.4.59,49.14l-.42.18L111,316.74Z"
-                                          style="fill: <?php echo getRndColor($indexLastColor) ?>"/>
+                                          style="fill: <?php echo getRndColor($indexLastColor, $colors) ?>"/>
                                     <path d="M111.36,316.57a349.43,349.43,0,0,1,267.69-.25L489.83,48.9C338.64-13.55,163.65-18.4.59,49.14l-.42.18L111,316.74Z"
-                                          style="fill: #fff;fill-opacity: <?php echo $coloredMaskOpacity ?>"/>
+                                          style="fill: #fff;fill-opacity: <?php echo $NoImageOpacity ?>"/>
                                 </svg>
                                 <div style="position: absolute; top:0; height: calc( 317px * <?php echo $sizeCarousel2 ?> ); display: flex; justify-content: center; align-items: center">
                                     <p style="padding: 0 30px; color: <?php echo $textColor ?>; text-align: center; margin: auto 0"><?php the_title(); ?></p>

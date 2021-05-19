@@ -23,6 +23,82 @@
     background-color: transparent;
     border: #7d539b 1px solid;
 }
+h1
+{
+    font-size: 3rem;
+}
+
+
+/*Scroll invite*/
+
+#scollInvite {
+    padding-top: 60px;
+    position: absolute;
+    left: 50vw;
+    top: 80vh;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+#scollInvite:hover {
+    opacity: .5;
+}
+#scollInvite span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #7d539b;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+#scollInvite span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #7d539b;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sdb10 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 /*nyan cat*/
 
@@ -84,4 +160,91 @@ i {   font-family: 'FontAwesome';
 {
     transition: all 500ms;
     transform: translateX(-66.66666%);
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width : 1000px) {
+
+    h1
+    {
+        font-size: 2.5rem;
+    }
+
+    #crayon
+    {
+        display: none !important;
+    }
+
+    #top-head div:last-of-type
+    {
+        margin-left: 15vw !important;
+        width: 70vw !important;
+    }
+    #top-head div:last-of-type div:last-of-type
+    {
+        margin: 70px auto 0 auto !important;
+        justify-content: center !important;
+    }
+
+    .circle1
+    {
+        width: 100vw !important;
+        height: 100vw !important;
+        top: calc(  (100vh)  / 2 - 100vw / 2 ) !important;
+        right: calc(-100vw / 2)!important;
+    }
+    .circle2
+    {
+        width: 75vw !important;
+        height: 75vw !important;
+        top: calc( (100vh) / 2 - 75vw / 2 ) !important;
+        right: calc(-75vw / 2) !important;
+    }
+    .circle3
+    {
+        width: 50vw !important;
+        height: 50vw !important;
+        top: calc( (100vh) / 2 - 50vw / 2 ) !important;
+        right: calc(-50vw / 2) !important;
+        z-index: -1;
+    }
+
+    #th-logo
+    {
+        top: 7vw !important;
+        left: 7vw !important;
+    }
+
+    #nyanCat .Ngrid
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    #nyanCat>div:last-of-type
+    {
+        display: none;
+    }
+    #nyanCat>div:first-of-type
+    {
+        max-width: unset !important;
+        width: 90vw !important;
+    }
+    #nyanCat
+    {
+        justify-content: center !important;
+    }
+
+    #carouselArticles,
+    #carouselArticles2
+    {
+        left: 50vw !important;
+    }
+    #carouselContainer
+    {
+        height: 50vh !important;
+    }
+
 }
