@@ -190,6 +190,8 @@ function nooblic_scripts() {
 
 		wp_enqueue_style('stylesGuideRedac', get_bloginfo('template_directory').'/assets/css/stylesGuideRedac.css');
 
+		wp_enqueue_style('Propos', get_bloginfo('template_directory').'/assets/css/Propos.css');
+
 		wp_enqueue_style('listeArticles', get_bloginfo('template_directory').'/assets/css/listeArticles.css');
 
 	wp_enqueue_script( 'nooblic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
