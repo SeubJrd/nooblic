@@ -93,7 +93,7 @@ get_header();
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
                                     <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
                                         <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
-                                        <span style="justify-self: flex-end ;align-self: flex-end; color: white"><?php comments_number('0', '1', '%'); ?> <i class="fas fa-comments"></i></span>
+                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 5px"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
                                       </div>
                                 </a>
                             </li>
@@ -108,8 +108,8 @@ get_header();
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
                                     <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
                                         <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
-                                        <span style="justify-self: flex-end ;align-self: flex-end; color: white"><?php comments_number('0', '1', '%'); ?> <i class="fas fa-comments"></i></span>
-                                      </div>
+                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 5px"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
+                                    </div>
                                 </a>
                             </li>
                             <?php endwhile; ?>
@@ -123,8 +123,8 @@ get_header();
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
                                     <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
                                         <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
-                                        <span style="justify-self: flex-end ;align-self: flex-end; color: white"><?php comments_number('0', '1', '%'); ?> <i class="fas fa-comments"></i></span>
-                                      </div>
+                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 5px"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
+                                    </div>
                                 </a>
                             </li>
                             <?php endwhile; ?>
@@ -142,7 +142,10 @@ get_header();
             </div>
         </div>
 
-
+        <?php
+                        /*Je n'ai pas pu me séparer de ce code :') trop de temps passé dessus*/
+        /*
+        ?>
         <?php
 
         //Parms
@@ -377,6 +380,17 @@ get_header();
 
 
     </main><!-- #main -->
+        */
+?>
+
+<div style="margin-bottom: 20px"></div>
+
+<?php
+wp_reset_query(); // necessary to reset query
+while ( have_posts() ) : the_post();
+    the_content();
+endwhile; // End of the loop.
+?>
 
 <?php
 

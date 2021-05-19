@@ -5,7 +5,7 @@
  *
  */
 ( function() {
-
+/*
 	//Params
 	let carouselArticles = null;
 	let carouselArticles2 = null;
@@ -23,6 +23,7 @@
 
 	/*////////////////////////////////////////////////////////////////////////Fonctions//////////////////////////////////////////////////////////////////////////////*/
 
+/*
 	function init()
 	{
 		//Calculer le centre du carousel
@@ -59,7 +60,7 @@
 	//onmousemove = function(e){ rot = e.clientX/1000 };
 
 	/*////////////////////////////////////////////////////////////////////////Loop & Triggers/////////////////////////////////////////////////////////////////////////////*/
-
+/*
 	//Boucle qui fait tourner le cercle
 	var time = 25;
 	setInterval(function() {
@@ -77,6 +78,6 @@
 	function doStuff() {
 		calcCarouselpos();
 	}
-
+*/
 
 }() );
