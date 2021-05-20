@@ -12,8 +12,8 @@ get_header();
 
     <main id="event" class="header-correction">
 
-        <section class="titre page">
-            <h1 class="entry-title">Liste des Articles</h1>
+        <section class="titre_page">
+            <h1 class="souligne">Liste des Articles</h1>
         </section>
 
 

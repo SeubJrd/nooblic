@@ -18,16 +18,26 @@ get_header();
                     <g id="Calque_2" data-name="Calque 2">
                         <g id="Calque_2-2" data-name="Calque 2">
                             <g>
-                                <line x1="9.57" y1="241.72" x2="56.84" y2="86.88" style="fill: #e9483f;stroke: #e9483f;stroke-miterlimit: 10;stroke-width: 20px"/>
-                                <line x1="150.97" y1="185.62" x2="199.82" y2="25.61" style="fill: #b84c96;stroke: #b84c96;stroke-miterlimit: 10;stroke-width: 20px"/>
-                                <line x1="151.92" y1="185.31" x2="75.1" y2="27.07" style="fill: none;stroke: #ed6b1d;stroke-miterlimit: 10;stroke-width: 20px"/>
-                                <line x1="75.1" y1="27.07" x2="56.83" y2="86.89" style="fill: none;stroke: #4ab277;stroke-miterlimit: 10;stroke-width: 20px"/>
-                                <line x1="132.96" y1="243.67" x2="151.68" y2="183.47" style="fill: none;stroke: #0060ac;stroke-miterlimit: 10;stroke-width: 20px"/>
-                                <line x1="132.96" y1="243.67" x2="57.35" y2="87.93" style="fill: #00b4e1;stroke: #00b4e1;stroke-miterlimit: 10;stroke-width: 20px"/>
-                                <polygon points="45.95 87.32 58.85 114.43 67.48 86.12 54.52 59.76 45.95 87.32" style="fill: #99553f"/>
-                                <polygon points="64.61 27.43 77.33 54.43 85.81 26.25 73.02 0 64.61 27.43" style="fill: #195527"/>
-                                <polygon points="122.02 243.75 135.06 271.11 143.81 242.54 130.7 215.94 122.02 243.75" style="fill: #203c87"/>
-                                <polygon points="140.61 184.46 153.49 211.53 162.12 183.26 149.18 156.94 140.61 184.46" style="fill: #7e2885"/>
+                                <line x1="9.57" y1="241.72" x2="56.84" y2="86.88"
+                                      style="fill: #e9483f;stroke: #e9483f;stroke-miterlimit: 10;stroke-width: 20px"/>
+                                <line x1="150.97" y1="185.62" x2="199.82" y2="25.61"
+                                      style="fill: #b84c96;stroke: #b84c96;stroke-miterlimit: 10;stroke-width: 20px"/>
+                                <line x1="151.92" y1="185.31" x2="75.1" y2="27.07"
+                                      style="fill: none;stroke: #ed6b1d;stroke-miterlimit: 10;stroke-width: 20px"/>
+                                <line x1="75.1" y1="27.07" x2="56.83" y2="86.89"
+                                      style="fill: none;stroke: #4ab277;stroke-miterlimit: 10;stroke-width: 20px"/>
+                                <line x1="132.96" y1="243.67" x2="151.68" y2="183.47"
+                                      style="fill: none;stroke: #0060ac;stroke-miterlimit: 10;stroke-width: 20px"/>
+                                <line x1="132.96" y1="243.67" x2="57.35" y2="87.93"
+                                      style="fill: #00b4e1;stroke: #00b4e1;stroke-miterlimit: 10;stroke-width: 20px"/>
+                                <polygon points="45.95 87.32 58.85 114.43 67.48 86.12 54.52 59.76 45.95 87.32"
+                                         style="fill: #99553f"/>
+                                <polygon points="64.61 27.43 77.33 54.43 85.81 26.25 73.02 0 64.61 27.43"
+                                         style="fill: #195527"/>
+                                <polygon points="122.02 243.75 135.06 271.11 143.81 242.54 130.7 215.94 122.02 243.75"
+                                         style="fill: #203c87"/>
+                                <polygon points="140.61 184.46 153.49 211.53 162.12 183.26 149.18 156.94 140.61 184.46"
+                                         style="fill: #7e2885"/>
                             </g>
                             <polygon points="207.36 0.81 190.25 22.71 209.38 28.52 207.36 0.81" style="fill: #b84c96"/>
                             <polygon points="2.02 266.53 19.14 244.62 0 238.8 2.02 266.53" style="fill: #e9483f"/>
@@ -82,9 +92,11 @@ get_header();
 
         </div>
 
-        <div id="nyanCat" style="margin-top: -40vh; display: flex; flex-direction: row; align-items: center; justify-content: flex-end">
+        <div id="nyanCat"
+             style="margin-top: -40vh; display: flex; flex-direction: row; align-items: center; justify-content: flex-end">
             <div style="z-index: 1; box-shadow: 0px 0px 30px rgba(0,0,0,0.27); min-height: 60vh; max-width: 864px; width: 70%; border-radius: 40px; background-color: white; overflow: hidden">
-                <div id="NCslider" class="NParentGrid" style="width: 300%; padding: 30px 20px 30px 20px; margin-left: -0%;">
+                <div id="NCslider" class="NParentGrid"
+                     style="width: 300%; padding: 30px 20px 30px 20px; margin-left: -0%;">
                     <div>
                         <h2>Nos articles les plus commentés</h2>
                         <ul class="Ngrid" style="padding: 0; margin: 0;">
