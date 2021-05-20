@@ -115,7 +115,7 @@ get_header();
                     <div>
                         <h2>Nos articles les plus lus</h2>
                         <ul class="Ngrid" style="padding: 0; margin: 0;">
-                            <?php $popular = new WP_Query('orderby=comment_count&posts_per_page=6'); ?> <?php while ($popular->have_posts()) : $popular->the_post(); ?>
+                            <?php $popular = new WP_Query('orderby=post_views&posts_per_page=6'); ?> <?php while ($popular->have_posts()) : $popular->the_post(); ?>
                             <li>
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
                                     <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
