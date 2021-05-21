@@ -15,7 +15,7 @@ html{
 
 .propos-p{
   margin-left: 15vw;
-  width: 65%;
+  width: 50%;
 }
 
 .propos-h2{
@@ -35,6 +35,10 @@ html{
   font-style: italic;
   text-align: center;
   display: block;
+}
+
+#sponsor{
+  margin-left: 5vw;
 }
 
 }
@@ -89,6 +93,15 @@ html{
     position: absolute;
   }
 
+  #sponsor{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 2vh;
+  }
+
+  #sponsor .wp-block-spacer{
+    height: 0;
+  }
 
 
 
