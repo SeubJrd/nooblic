@@ -1,6 +1,6 @@
 /*titre*/
 @media only screen and (min-width: 600px) {
-    .souligne {
+    .page-template-listeArticles .souligne {
         display: inline;
         --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
         padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
@@ -17,27 +17,27 @@
     }
 }
 
-.titre_page {
+.page-template-listeArticles .titre_page {
     margin: 40px 0;
 }
 
 
 /*grille*/
-#event {
+.page-template-listeArticles #event {
     width: 100%;
     padding: 0 50px;
 }
 
-#event div.entete {
+.page-template-listeArticles #event div.entete {
     width: 100%;
 }
 
-h1 {
-    font-size: 5vw;
+.page-template-listeArticles h1 {
+    font-size: 3rem;
     color: black;
 }
 
-#event .grille {
+.page-template-listeArticles #event .grille {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -45,10 +45,10 @@ h1 {
     margin-bottom: 50px;
 }
 
-#event .grille ul {
+.page-template-listeArticles #event .grille ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 32vw;
+    grid-auto-rows: 400px;
     grid-column-gap: 4vw;
     grid-row-gap: 3vw;
     margin-left: auto;
@@ -58,7 +58,8 @@ h1 {
     width: 100%;
 }
 
-#event div.articles {
+/*
+.page-template-listeArticles #event div.articles {
     width: 100%;
     height: 32vw;
     color: white;
@@ -67,192 +68,150 @@ h1 {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-color: #00000055;
-}
+}*/
 
-#event li a:hover {
+
+.page-template-listeArticles #event li a:hover {
     transition: all;
     transform: translateY(5px);
 }
 
-div.liste-article {
+.page-template-listeArticles div.liste-article {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 10px;
-    height: 17vw;
+    border-radius: 10px 10px 0 0;
+    min-height: 200px;
+    background-color: #00000055;
 }
 
-#event h2 {
-    font-family: "Roboto Black", sans-serif;
+.page-template-listeArticles #event h2 {
     font-style: normal;
     font-weight: 900;
-    font-size: 1.6vw;
-    line-height: 2vw;
+    font-size: 1.3rem;
+    line-height: auto;
     color: white;
     padding: 10px;
     margin: 0;
     filter: drop-shadow(0 0 15px #0000002c);
 }
 
-#event a {
+.page-template-listeArticles #event a {
     text-decoration: none;
     margin: 0;
+    display: block;
+    min-height: 400px;
+    position: relative;
+    width: 100%;
 }
 
-#event p {
+.page-template-listeArticles #event p {
     filter: drop-shadow(0 0 15px #00000022);
-    font-family: "Roboto", sans-serif;
     font-style: normal;
     margin: 0;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
-#event p.resume {
-    padding: 0 10px;
-    font-size: 1.1vw;
+.page-template-listeArticles #event p.resume {
+    padding: 0 10px 20px 10px;
+    font-size: 1rem;
 }
 
-#event p.lire_la_suite {
-    font-family: "Roboto Light", sans-serif;
-    font-size: 0.9vw;
+.page-template-listeArticles #event p.lire_la_suite {
+    font-weight: lighter;
+    font-size: 0.9rem;
 }
 
-#event p.interactions {
-    font-family: "Roboto Light", sans-serif;
+.page-template-listeArticles #event p.interactions {
     padding: 0 7px;
 }
 
-#fond-texte {
+.page-template-listeArticles #fond-texte {
     background-color: #B84D97;
     opacity: 100%;
-    position: relative;
-    height: 17vw;
-    bottom: -16vw;
+    position: absolute;
+    padding-bottom: 20px;
     border-radius: 0 0 10px 10px;
+    bottom: 0;
+    min-height: 200px;
 }
 
-.donnees-articles {
+.page-template-listeArticles #fond-texte p {
+    color: white;
+}
+
+.page-template-listeArticles .donnees-articles {
     display: flex;
     justify-content: flex-start;
     line-height: 100%;
-}
-
-div.en-bas {
+    color: white;
     position: absolute;
-    bottom: 1.2vw;
-    margin-left: 7px;
+    bottom: 5px;
 }
 
-img.interaction {
+.page-template-listeArticles img.interaction {
     height: 20px;
     width: auto;
 }
 
-.entry-meta {
+.page-template-listeArticles .entry-meta {
     margin: 0;
     font-weight: normal;
-    font-family: "Roboto Light", sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
     padding: 0 7px;
 }
 
-.fa-comments:before {
+.page-template-listeArticles .fa-comments:before {
     padding-right: 0.7vw;
 }
 
-.post-views.entry-meta {
-    font-family: "Roboto", sans-serif;
-    font-size: 1vw;
+.page-template-listeArticles .post-views.entry-meta {
+    font-size: 1rem;
 }
 
+
 @media screen and (min-width: 601px) and (max-width: 900px) {
-
-    h1 {
-        font-size: 8vw;
-    }
-
-    #event {
+/*
+    .page-template-listeArticles #event {
         padding: 0 30px;
     }
-
-    #event .grille ul {
+*/
+    .page-template-listeArticles #event .grille ul {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    #event div.articles {
-        height: 33vw;
-    }
-
-    #fond-texte {
-        height: 18vw;
+/*
+    .page-template-listeArticles #fond-texte {
         bottom: -15vw;
-    }
+    }*/
 
-    #event p.resume {
-        font-size: 1.6vw;
-    }
-
-    #event p.interactions {
-        font-size: 1.6vw;
-    }
-
-    #event p.post-views\.entry-meta {
-        font-size: 1.6vw;
-    }
-
-    #event span.post-views-count {
-        font-size: 1.6vw;
-    }
 }
 
 @media (min-width: 0px) and (max-width: 600px) {
-    #event {
+/*    .page-template-listeArticles #event {
         padding: 0;
     }
 
-    h1 {
+    .page-template-listeArticles #event h1 {
         margin: 0;
         padding-left: 2vh;
     }
-
-    #event .grille ul {
+*/
+    .page-template-listeArticles #event .grille ul {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 20vw;
         padding: 0 4vh;
     }
-
-    #event div.liste-article {
+/*
+    .page-template-listeArticles #event div.liste-article {
+        height: 45vw;
+    }
+/*
+    .page-template-listeArticles #event div.articles {
         height: 45vw;
     }
 
-    #event div.articles {
-        height: 45vw;
-    }
-
-    #fond-texte {
-        height: 20vw;
+    .page-template-listeArticles #fond-texte {
         bottom: -25vw;
     }
-
-    #event h2 {
-        font-size: 3vw;
-        line-height: auto;
-    }
-
-    #event p.resume {
-        font-size: 2vw;
-    }
-
-    #event p.interactions {
-        font-size: 2vw;
-    }
-
-    #event p.post-views\.entry-meta {
-        font-size: 2vw;
-    }
-
-    #event span.post-views-count {
-        font-size: 2vw;
-    }
-
+*/ù
 }
