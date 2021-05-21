@@ -37,6 +37,10 @@ html{
   display: block;
 }
 
+#sponsor{
+  margin-left: 5vw;
+}
+
 }
 
 
@@ -89,6 +93,15 @@ html{
     position: absolute;
   }
 
+  #sponsor{
+    margin-left: 4vw;
+    width: 90%;
+    margin-top: 2vh;
+  }
+
+  #sponsor .wp-block-spacer{
+    height: 0;
+  }
 
 
 
