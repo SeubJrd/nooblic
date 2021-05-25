@@ -162,6 +162,12 @@ i {   font-family: 'FontAwesome';
     transform: translateX(-66.66666%);
 }
 
+/*correction effets de bord*/
+.entry-meta {
+    margin-top: 0 !important;
+    font-weight: unset !important;
+}
+
 
 /* Responsive */
 

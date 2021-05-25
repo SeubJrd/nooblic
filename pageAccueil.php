@@ -105,7 +105,7 @@ get_header();
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
                                     <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
                                         <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
-                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 5px"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
+                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 3px; margin-left: 5px;"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
                                       </div>
                                 </a>
                             </li>
@@ -120,7 +120,7 @@ get_header();
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
                                     <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
                                         <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
-                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 5px"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
+                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 3px; margin-left: 5px;"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
                                     </div>
                                 </a>
                             </li>
@@ -135,7 +135,7 @@ get_header();
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>')">
                                     <div style="display: flex; justify-content: space-between; flex-direction: column; position: absolute; bottom: 0; background-color: rgba(184,77,151,0.91); width: 100%; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 5px 10px; min-height: 100px;">
                                         <span style="align-self: flex-start; color: white"><?php the_title(); ?></span>
-                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 5px"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
+                                        <span style="justify-self: flex-end ; align-self: flex-end; color: white; display: flex; flex-direction: row;"><span style="display: flex; align-items: center;"><?php pvc_post_views( get_the_ID(), true );?></span> <span style="font-size: 1rem; margin-bottom: 3px; margin-left: 5px;"><i style="margin-right: 5px;" class="fas fa-comments"></i><?php comments_number('0', '1', '%'); ?></span></span>
                                     </div>
                                 </a>
                             </li>
@@ -144,7 +144,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div style="z-index: 2">
+            <div style="z-index: 2; font-size: 1.2rem">
                 <div style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(233, 72, 63); height: <?php echo cos(-2 * M_PI / 6) * 100 ?>px; width: 40vw;"></div>
                 <div id="NC_Trig1" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(27, 60, 136); height: <?php echo cos(-M_PI / 6) * 100 ?>px; width: 40vw; cursor: pointer;" >Articles les plus commentés</div>
                 <div id="NC_Trig2" style="display: flex; align-items: center; color: white; padding-left: 20px; background-color: rgb(237, 107, 29); height: <?php echo cos(0) * 100 ?>px; width: 40vw; cursor: pointer;">Articles les plus lus</div>
