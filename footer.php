@@ -18,6 +18,7 @@
             <!-- ajout de ma nouvelle widget area -->
             <?php if ( is_active_sidebar( 'foot1' ) ) : ?>
                 <div id="header-widget-area" class="nwa-header-widget widget-area" role="complementary">
+                    <?php the_custom_logo(); ?>
                     <?php dynamic_sidebar( 'foot1' ); ?>
                 </div>
             <?php endif; ?>

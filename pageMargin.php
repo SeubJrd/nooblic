@@ -1,12 +1,8 @@
 <?php
-/**
- * Page classique avec margins
- *
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Nooblic
- */
+/*
+Template Name: PageMargins
+
+*/
 
 get_header();
 ?>
