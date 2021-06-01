@@ -83,8 +83,8 @@ get_header();
                     <p>Des recherches pédagogiques et avis personnels,<br>par des étudiants passionnés.</p>
                 </div>
                 <div style="display: flex; justify-content: flex-end; width: 80%; margin-left: auto; margin-top: 70px;">
-                    <a href="#" class="n-button n-fill-primary">Lire</a>
-                    <a href="#" class="n-button n-outline-primary" style="margin-left: 20px;">À propos</a>
+                    <a href="<?php echo esc_url( home_url( '/listearticles' ) ); ?>" class="n-button n-fill-primary">Lire</a>
+                    <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="n-button n-outline-primary" style="margin-left: 20px;">À propos</a>
                 </div>
             </div>
 
