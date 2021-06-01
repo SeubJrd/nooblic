@@ -29,7 +29,7 @@ if (have_posts()) :
                     <!--Titre et résumé de l'article-->
 
                     <h2 class="soulignement"><?php the_title(); ?></h2>
-                    <p class="resume"><?php $chaine = substr(get_the_excerpt(), 0, 120);
+                    <p class="resume"><?php $chaine = substr(get_the_excerpt(), 0, 200);
                         // on regarde ou se trouve le dernier espace dans la chaine
                         $espace = strrpos($chaine, " ");
                         // on prend la chaine de 0 au dernier espace et on ajoute ...
